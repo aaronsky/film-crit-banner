@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Film Crit Banner",
+    "description": "A Chrome extension to make Film.Crit.Hulk essays a little easier on the eyes",
+    "version": "1.0",
+    /*"icons": {
+        "16": "images/carbs16.png",
+        "48": "images/carbs48.png",
+        "128": "images/carbs128.png"
+    },*/
+    "content_scripts": [{
+        "matches": [
+            "http://birthmoviesdeath.com/*",
+            "https://birthmoviesdeath.com/*"
+        ],
+        "js": [
+            "index.js"
+        ],
+        "run_at": "document_end"
+    }]
+}
